@@ -1,0 +1,26 @@
+.content {
+  width: 800px;
+  height: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+.showCounter {
+  height: 200px;
+  background-color: #bbd8dc;
+}
+.changeCounter {
+  height: 400px;
+}
+.counter {
+  font-weight: bold;
+  font-size: 24px;
+  vertical-align: middle;
+  padding-top: 50px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
