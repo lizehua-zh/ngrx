@@ -1,14 +1,14 @@
 <div nz-row>
-  <div nz-col nzSpan="12" class="padding">
-    <div>操作人：A</div>
-    <button nz-button nzType="primary" class="mt-5 mr-10">增加</button>
-    <button nz-button nzType="danger" class="mt-5 mr-10">减少</button>
-    <button nz-button nzType="default" class="mt-5 ">重置</button>
-  </div>
-  <div nz-col nzSpan="12" class="padding">
-    <div>操作人：B</div>
-    <button nz-button nzType="primary" class="mt-5 mr-10">增加</button>
-    <button nz-button nzType="danger" class="mt-5 mr-10">减少</button>
-    <button nz-button nzType="default" class="mt-5 ">重置</button>
-  </div>
+    <div nz-col nzSpan="12" class="padding">
+        <div>操作人：A</div>
+        <button nz-button nzType="primary" (click)="increment('A','增加1')" class="mt-5 mr-10">增加</button>
+        <button nz-button nzType="danger" (click)="decrement('A','減少1')" class="mt-5 mr-10">减少</button>
+        <button nz-button nzType="default" (click)="reset('A','重置')" class="mt-5 ">重置</button>
+    </div>
+    <div nz-col nzSpan="12" class="padding">
+        <div>操作人：B</div>
+        <button nz-button nzType="primary" (click)="increment('B','增加1')" class="mt-5 mr-10">增加</button>
+        <button nz-button nzType="danger" (click)="decrement('B','減少1')" class="mt-5 mr-10">减少</button>
+        <button nz-button nzType="default" (click)="reset('B','重置')" class="mt-5 ">重置</button>
+    </div>
 </div>

@@ -12,12 +12,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
+import * as fromReducer from './counter.reucer'
 
 
 
 @NgModule({
   declarations: [AppComponent, HeroesComponent, HeroDetailComponent],
-  imports: [BrowserModule, FormsModule, StoreModule.forRoot(reducers, {
+  imports: [BrowserModule, FormsModule, StoreModule.forRoot({ demo: fromReducer.reducer }, {
       metaReducers,
       runtimeChecks: {
         strictStateImmutability: true,
@@ -25,6 +26,7 @@ import zh from '@angular/common/locales/zh';
       }
     }), NgZorroAntdModule, HttpClientModule, BrowserAnimationsModule],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+
+export class AppModule { }
